@@ -1,0 +1,22 @@
+{
+  "Name": "Tipi tradicional empaquetado",
+  "RequiredGear": [
+    { "Item": "GEAR_Stick", "Count": 20, "Units": "Count" },
+    { "Item": "GEAR_WolfPeltDried", "Count": 6, "Units": "Count" },
+    { "Item": "GEAR_GutDried", "Count": 4, "Units": "Count" },
+    { "Item": "GEAR_Stone", "Count": 10, "Units": "Count" }
+  ],
+  "RequiredPowder": [],
+  "RequiredLiquid": [],
+  "RequiredTool": "GEAR_Knife",
+  "OptionalTools": ["GEAR_KnifeImprovised", "GEAR_JeremiahKnife", "GEAR_KnifeScrapMetal", "GEAR_CougarClawKnife"],
+  "RequiredCraftingLocation": "Workbench",
+  "RequiresLitFire": false,
+  "RequiresLight": true,
+  "CraftedResult": "GEAR_BurebistaPackedTipi",
+  "CraftedResultCount": 1,
+  "DurationMinutes": 720,
+  "CraftingAudio": "Play_CraftingLeatherHide",
+  "AppliedSkill": "None",
+  "ImprovedSkill": "None"
+}
