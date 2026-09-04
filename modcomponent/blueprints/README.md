@@ -1,0 +1,1 @@
+Crafting recipe source.
