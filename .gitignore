@@ -1,12 +1,7 @@
-bin/
-obj/
+**/bin/
+**/obj/
 artifacts/
 .vs/
-.idea/
 *.user
 *.suo
-*.log
-UnityInventory/Library/
-UnityInventory/Temp/
-UnityInventory/Logs/
-
+*.pdb
