@@ -2,7 +2,7 @@
 
 Bastidor interior opcional para **BurebistaTraditionalTipi**. Los palos usan materiales nativos de The Long Dark; las cuerdas, el tamaño y el sistema de curado se conservan.
 
-**[Descargar](../../downloads/TipiCuringRack-v0.1.1.zip?raw=true)** · [Instalación del tipi y requisitos](../../README.md)
+**[Descargar](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiCuringRack-v0.1.1.zip)** · [Instalación del tipi y requisitos](../../README.md)
 
 Cierra el juego y copia `Mods/BurebistaTipiCuringRack.dll` en `TheLongDark/Mods`. Conserva los archivos y dependencias del tipi.
 

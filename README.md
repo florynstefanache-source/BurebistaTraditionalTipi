@@ -4,11 +4,11 @@ Un tipi portátil con piel cosida, palos con materiales del juego y una fogata i
 
 | Componente | Versión | Descarga | Guía |
 | --- | --- | --- | --- |
-| Tipi tradicional | **1.2.3** | [ZIP del tipi](downloads/BurebistaTraditionalTipi-v1.2.3.zip?raw=true) | Instrucciones abajo |
-| Bastidor de curado | **0.1.1** | [ZIP del bastidor](downloads/TipiCuringRack-v0.1.1.zip?raw=true) | [Uso del bastidor](addons/TipiCuringRack/README.md) |
-| Banco y cocina | **0.3.4** | [ZIP del banco](downloads/TipiWorkbench-v0.3.4.zip?raw=true) | [Uso del banco](addons/TipiWorkbench/README.md) |
+| Tipi tradicional | **1.2.3** | [ZIP del tipi](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTraditionalTipi-v1.2.3.zip) | Instrucciones abajo |
+| Bastidor de curado | **0.1.1** | [ZIP del bastidor](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiCuringRack-v0.1.1.zip) | [Uso del bastidor](addons/TipiCuringRack/README.md) |
+| Banco y cocina | **0.3.4** | [ZIP del banco](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiWorkbench-v0.3.4.zip) | [Uso del banco](addons/TipiWorkbench/README.md) |
 
-**[Descargar el tipi con los dos addons](downloads/BurebistaTipi-Pack-1.2.3-Rack-0.1.1-Workbench-0.3.4.zip?raw=true)**
+**[Descargar el tipi con los dos addons](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipi-Pack-1.2.3-Rack-0.1.1-Workbench-0.3.4.zip)**
 
 Los ZIP contienen una carpeta `Mods` lista para copiar. Los addons aparecen al desplegar el tipi cuando sus DLL están instaladas; no tienen una receta de construcción independiente en estas versiones.
 

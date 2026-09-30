@@ -2,7 +2,7 @@
 
 Banco exterior opcional para **BurebistaTraditionalTipi**, con materiales del juego, herramientas decorativas y un brasero con un punto central para cocinar con olla o sartén.
 
-**[Descargar](../../downloads/TipiWorkbench-v0.3.4.zip?raw=true)** · [Instalación del tipi y requisitos](../../README.md)
+**[Descargar](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiWorkbench-v0.3.4.zip)** · [Instalación del tipi y requisitos](../../README.md)
 
 Cierra el juego y sustituye `Mods/BurebistaTipiWorkbench.dll` en `TheLongDark/Mods`. Las texturas auxiliares están integradas en la DLL. Conserva el tipi y sus dependencias; la protección de recogida está preparada para el tipi **1.2.3**.
 
