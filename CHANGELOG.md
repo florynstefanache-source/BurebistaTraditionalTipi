@@ -1,5 +1,15 @@
 # Historial de cambios
 
+## Cama de piel 0.1.1 · 11 octubre 2026
+
+- Tercer addon opcional junto al bastidor y al banco, con descarga y código independientes.
+- Cama automática con una piel curada; descanso nativo con E y bonus de +5/+7/+10/+12 °C.
+- Mejora automática ciervo → lobo → alce → oso; devuelve la piel anterior.
+- Persistencia por partida y conservación al recoger el tipi.
+- Corrige la cercanía usando la posición real del jugador y reconoce pieles curadas en el inventario.
+- Funcionamiento de v0.1.1 confirmado en partida por el usuario; compilación y pruebas verificadas.
+
+
 ## Publicación conjunta · 28 septiembre 2026
 
 Se reúne el tipi 1.2.3 con los addons opcionales Curing Rack 0.1.1 y Workbench 0.3.4. Incluye descargas separadas y conjuntas, código, requisitos, controles y sumas SHA-256. Conserva la licencia y el historial del repositorio.

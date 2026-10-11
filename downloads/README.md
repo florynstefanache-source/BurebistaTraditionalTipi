@@ -8,3 +8,9 @@
 [Requisitos e instalacion](../README.md) · [SHA-256](../SHA256SUMS.txt)
 
 Los ZIP individuales de los addons requieren el tipi. El paquete conjunto incluye los tres mods, pero no sus dependencias externas. El ZIP historico v1.1 de `release` no es la version actual.
+
+## Tercer addon: cama de piel
+
+- [BurebistaTipiHideBed-v0.1.1.zip](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipiHideBed-v0.1.1.zip) · [Guía](../addons/TipiHideBed/README.md)
+
+Para instalar los tres addons, utiliza el paquete conjunto anterior y añade este ZIP de cama. El paquete anterior no incluye la cama.

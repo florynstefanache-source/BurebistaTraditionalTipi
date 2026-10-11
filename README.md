@@ -1,14 +1,17 @@
 # Burebista Traditional Tipi · The Long Dark
 
-Un tipi portátil con piel cosida, palos con materiales del juego y una fogata interior. Este repositorio reúne el mod principal y dos addons opcionales: un bastidor de curado y un banco de trabajo exterior con brasero y cocina.
+Un tipi portátil con piel cosida, palos con materiales del juego y una fogata interior. Este repositorio reúne el mod principal y tres addons opcionales: un bastidor de curado, un banco de trabajo exterior con brasero y cocina y una cama de piel con mejoras automáticas.
 
 | Componente | Versión | Descarga | Guía |
 | --- | --- | --- | --- |
 | Tipi tradicional | **1.2.3** | [ZIP del tipi](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTraditionalTipi-v1.2.3.zip) | Instrucciones abajo |
 | Bastidor de curado | **0.1.1** | [ZIP del bastidor](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiCuringRack-v0.1.1.zip) | [Uso del bastidor](addons/TipiCuringRack/README.md) |
 | Banco y cocina | **0.3.4** | [ZIP del banco](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiWorkbench-v0.3.4.zip) | [Uso del banco](addons/TipiWorkbench/README.md) |
+| Cama de piel | **0.1.1** | [ZIP de la cama](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipiHideBed-v0.1.1.zip) | [Uso de la cama](addons/TipiHideBed/README.md) |
 
 **[Descargar el tipi con los dos addons](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipi-Pack-1.2.3-Rack-0.1.1-Workbench-0.3.4.zip)**
+
+Para tener los tres addons, instala el paquete anterior y añade el **[ZIP de la cama v0.1.1](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipiHideBed-v0.1.1.zip)**. El paquete conjunto anterior conserva sus dos addons originales.
 
 Los ZIP contienen una carpeta `Mods` lista para copiar. Los addons aparecen al desplegar el tipi cuando sus DLL están instaladas; no tienen una receta de construcción independiente en estas versiones.
 
@@ -35,7 +38,8 @@ TheLongDark/Mods/
 │   ├── tipi_hide.png
 │   └── tipi_wolf.png
 ├── BurebistaTipiCuringRack.dll       (opcional)
-└── BurebistaTipiWorkbench.dll        (opcional)
+├── BurebistaTipiWorkbench.dll        (opcional)
+└── BurebistaTipiHideBed.dll          (opcional, descarga separada)
 ```
 
 Las dependencias y las DLL del juego no se redistribuyen. Para actualizar solo un addon basta sustituir su DLL; no hace falta reconstruir el tipi.
@@ -59,7 +63,7 @@ Necesitas un cuchillo; la receta admite también sus variantes indicadas en [la 
 | --- | --- |
 | **F3** | Desplegar el tipi empaquetado |
 | **F4** | Girar el tipi desplegado |
-| **E** | Abrir o cerrar la puerta cerca del tipi |
+| **E** | Abrir o cerrar la puerta cerca del tipi; al apuntar a la cama, abrir descanso |
 | **F2** | Recoger el tipi |
 | **F9** | Ocultar o mostrar las instrucciones del tipi |
 | **G** | Colocar materiales frescos cercanos en el bastidor, con el addon instalado |
@@ -68,6 +72,10 @@ Necesitas un cuchillo; la receta admite también sus variantes indicadas en [la 
 | **C** | Acceder al fuego o al punto de cocina del brasero |
 
 `Ctrl+F6` entrega un tipi empaquetado para pruebas. No es necesario para el uso normal.
+
+## Cama de piel
+
+Con el addon de cama instalado, una piel curada se convierte automáticamente en cama al acercarte al tipi. Mejora de **ciervo (+5 °C) → lobo (+7 °C) → alce (+10 °C) → oso (+12 °C)** y devuelve la piel sustituida. **E** al mirar la cama abre el descanso del juego. [Instrucciones completas](addons/TipiHideBed/README.md).
 
 ## Recogida, cocina y guardado
 
@@ -88,6 +96,7 @@ Si aparece un fallo, indica las versiones, los pasos para reproducirlo y adjunta
 - [Código del tipi](src) y proyecto en la raíz.
 - [Código del bastidor](addons/TipiCuringRack/Source).
 - [Código del banco](addons/TipiWorkbench/Source).
+- [Código de la cama](addons/TipiHideBed/Source) y [pruebas](addons/TipiHideBed/Tests).
 - [Compilar desde código](docs/BUILD.md).
 - [Historial de cambios](CHANGELOG.md) · [Descargas y comprobaciones SHA-256](downloads/README.md).
 

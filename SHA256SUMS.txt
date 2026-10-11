@@ -2,3 +2,4 @@
 22aa2dec7b265739987066410ff7f99488b3527bbbf8940ae382cad645705221  downloads/BurebistaTraditionalTipi-v1.2.3.zip
 d99d66e90014f19de4bbc829aee1e56ba66cc5f09e5453cd02e27aa3e1a78d75  downloads/TipiCuringRack-v0.1.1.zip
 408e63916d4f54f288f425c12f86d11e538f6baf844fcc9bbf403dc3e41ee079  downloads/TipiWorkbench-v0.3.4.zip
+9c4ab7442bd6067d302c7139358061f37468a1b81aff9dc9517c49b22654da0d  downloads/BurebistaTipiHideBed-v0.1.1.zip
