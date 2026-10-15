@@ -1,33 +1,17 @@
-# Tipi Workbench · v0.3.4
+# Tipi Workbench · 0.3.3 · Español / English
 
-Banco exterior opcional para **BurebistaTraditionalTipi**, con materiales del juego, herramientas decorativas y un brasero con un punto central para cocinar con olla o sartén.
+## Español
 
-**[Descargar](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiWorkbench-v0.3.4.zip)** · [Instalación del tipi y requisitos](../../README.md)
+Banco exterior con brasero, forja y cocina para Burebista Traditional Tipi. Esta descarga usa la versión instalada y aprobada por el usuario, con ayudas y avisos traducidos según el idioma del juego.
 
-Cierra el juego y sustituye `Mods/BurebistaTipiWorkbench.dll` en `TheLongDark/Mods`. Las texturas auxiliares están integradas en la DLL. Conserva el tipi y sus dependencias; la protección de recogida está preparada para el tipi **1.2.3**.
+Cierra el juego y reemplaza `Mods/BurebistaTipiWorkbench.dll`. Mantén el tipi y sus dependencias. B abre el banco, C accede a la cocina y N enciende/apaga el brasero. Combustible: 1 carbón o 3 carboncillos por sesión. Apaga la fogata y la forja antes de recoger el tipi. Se conserva el comportamiento de la versión instalada 0.3.3.
 
-## Uso y combustible
+[Paquete completo ES/EN](../../README.md)
 
-El banco aparece automáticamente junto al tipi desplegado. Acércate a menos de **2,5 m** del banco.
+## English
 
-| Tecla | Función |
-| --- | --- |
-| **B** | Abrir el menú de fabricación |
-| **N** | Encender o apagar las brasas de fabricación |
-| **C** | Abrir la interacción del fuego o del punto central de cocina |
+Exterior workbench with brazier, forge and cooking for Burebista Traditional Tipi. Uses the user's installed, approved version with hints and messages following the game language.
 
-Encender las brasas de fabricación consume **1 carbón** (`GEAR_Coal`) o **3 carboncillos** (`GEAR_Charcoal`). Duran cinco minutos de tiempo activo e incluyen una sesión de fabricación sin segundo cobro mientras estén encendidas. Abrir el menú por sí solo no consume combustible. Las siguientes sesiones vuelven a aplicar el coste.
+Close the game and replace `Mods/BurebistaTipiWorkbench.dll`. Keep the main tipi and its dependencies. B opens the workbench, C opens cooking and N lights/extinguishes the brazier. Fuel: 1 coal or 3 charcoal per session. Extinguish the campfire and forge before packing the tipi. Preserves the installed 0.3.3 behavior.
 
-La cocina utiliza un fuego nativo con su propio combustible y las interacciones normales del juego. **N no apaga ese fuego.** Pulsa C y usa el punto de cocina para colocar la olla o sartén; se alinea en el centro del enrejado. Las herramientas de adorno no se pueden recoger.
-
-El brasero no añade recetas de forja ni una temperatura de forjado. La fabricación del banco y el fuego de cocina son sistemas distintos.
-
-## Recoger el tipi sin dejar una cocina invisible
-
-- Apaga o deja agotarse la fogata interior y el fuego de cocina; apaga también las brasas de fabricación.
-- Retira primero la olla, sartén y comida del punto de cocina.
-- Pulsa la tecla habitual de recogida del tipi (**F2**).
-
-La versión 0.3.4 bloquea la recogida si hay fuego o quedan objetos en los puntos de cocina comprobados. Tras una recogida correcta elimina el punto nativo del brasero, aunque su estructura sea invisible, y registra su retirada para el siguiente guardado normal. No elimina la cocina por un simple cambio de zona ni limpia puntos huérfanos de versiones antiguas.
-
-Compilación correcta. La olla centrada se confirmó en partida en 0.3.2; falta validar en partida la recogida, el guardado y la carga con 0.3.4.
+[Full ES/EN package](../../README.md)

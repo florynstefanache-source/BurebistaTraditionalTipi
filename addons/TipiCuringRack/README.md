@@ -1,3 +1,5 @@
+**Español / English:** ayudas y avisos según el idioma del juego. / Hints and messages follow the game language.
+
 # Tipi Curing Rack · v0.1.1 Beta
 
 Bastidor interior opcional para **BurebistaTraditionalTipi**. Los palos usan materiales nativos de The Long Dark; las cuerdas, el tamaño y el sistema de curado se conservan.
@@ -22,3 +24,10 @@ Utiliza el sistema nativo de evolución de objetos, con sus tiempos y progreso. 
 Los materiales siguen siendo objetos del mundo y conservan el progreso mediante el guardado del juego. No se guarda una lista propia de posiciones: al cargar puede ser necesario pulsar G de nuevo. Al retirar el tipi se liberan como objetos del mundo. No se garantiza curado con la zona descargada.
 
 La versión 0.1.1 modifica únicamente el material de madera y la versión del addon. Compilación comprobada; la validación completa de curado y guardado en partida sigue pendiente.
+
+
+## English
+
+Curing rack addon for Burebista Traditional Tipi. Hints and messages follow the game language (English or Spanish). Close the game and replace `Mods/BurebistaTipiCuringRack.dll`. Keep the main tipi, its textures and dependencies. Recipes, fuel, controls, save data and existing behavior are preserved.
+
+[Full bilingual package](../../README.md)

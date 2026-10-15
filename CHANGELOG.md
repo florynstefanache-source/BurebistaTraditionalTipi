@@ -1,3 +1,9 @@
+# ES/EN · 2026-10-15
+
+Tipi y tres addons con ayudas y avisos en español/inglés según el juego. Usa las versiones instaladas del usuario; solo traduce textos. Paquete completo con cama incluida; descargas individuales actualizadas. 663 comprobaciones fuera del juego.
+
+Bilingual tipi and three addons. Uses the user’s installed versions with display-text changes only. Full package includes the bed; individual downloads updated. 663 offline checks.
+
 # Historial de cambios
 
 ## Cama de piel 0.1.1 · 11 octubre 2026

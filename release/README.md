@@ -1,5 +1,5 @@
-# Archivos para instalar
+# Instalación / Installation
 
-`Mods` contiene el tipi 1.2.3, Curing Rack 0.1.1 y Workbench 0.3.4. Copia su contenido en la carpeta Mods del juego con el juego cerrado. Los dos addons son opcionales.
+Copia el contenido de `Mods` en la carpeta Mods del juego, con el juego cerrado. Incluye tipi 1.2.3, bastidor 0.1.1, banco 0.3.3 y cama 0.1.1 con textos ES/EN. Conserva partidas y datos de ModData.
 
-Para descargar un ZIP preparado utiliza [las descargas actuales](../downloads/README.md). El ZIP v1.1 conservado aquí es histórico; no es la versión recomendada.
+Close the game and copy `Mods` contents into the game Mods folder. Includes tipi 1.2.3, rack 0.1.1, workbench 0.3.3 and bed 0.1.1 with ES/EN text. Keep your saves and ModData files.

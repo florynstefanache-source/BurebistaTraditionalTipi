@@ -5,7 +5,7 @@ using Il2CppTLD.Gear;
 using MelonLoader;
 using UnityEngine;
 using Object = UnityEngine.Object;
-[assembly: MelonInfo(typeof(TipiWorkbench.Main), "Tipi Exterior Workbench", "0.3.4", "Burebista")]
+[assembly: MelonInfo(typeof(TipiWorkbench.Main), "Tipi Exterior Workbench", "0.3.3", "Burebista")]
 [assembly: MelonGame("Hinterland", "TheLongDark")]
 namespace TipiWorkbench;
 public sealed partial class Main : MelonMod

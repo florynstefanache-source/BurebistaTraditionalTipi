@@ -1,16 +1,5 @@
-# Descargas actuales
+# Descargas / Downloads
 
-- [BurebistaTraditionalTipi-v1.2.3.zip](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTraditionalTipi-v1.2.3.zip)
-- [TipiCuringRack-v0.1.1.zip](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiCuringRack-v0.1.1.zip)
-- [TipiWorkbench-v0.3.4.zip](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiWorkbench-v0.3.4.zip)
-- [BurebistaTipi-Pack-1.2.3-Rack-0.1.1-Workbench-0.3.4.zip](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipi-Pack-1.2.3-Rack-0.1.1-Workbench-0.3.4.zip)
+[Paquete completo bilingüe / Full bilingual package](BurebistaTipi-3Addons-ES-EN.zip?raw=true): tipi, bastidor, banco/forja/cocina y cama. / Tipi, curing rack, workbench/forge/cooking and hide bed.
 
-[Requisitos e instalacion](../README.md) · [SHA-256](../SHA256SUMS.txt)
-
-Los ZIP individuales de los addons requieren el tipi. El paquete conjunto incluye los tres mods, pero no sus dependencias externas. El ZIP historico v1.1 de `release` no es la version actual.
-
-## Tercer addon: cama de piel
-
-- [BurebistaTipiHideBed-v0.1.1.zip](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipiHideBed-v0.1.1.zip) · [Guía](../addons/TipiHideBed/README.md)
-
-Para instalar los tres addons, utiliza el paquete conjunto anterior y añade este ZIP de cama. El paquete anterior no incluye la cama.
+Los enlaces individuales también contienen los archivos ES/EN actualizados. / Individual downloads also contain the updated ES/EN files.

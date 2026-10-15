@@ -23,14 +23,12 @@ public sealed partial class Main
         centralFireField=type.GetField("centralFire",flags);
         if(pack==null || deployedTipiField==null)
         {MelonLogger.Error("No se pudo instalar el bloqueo de recogida: version del tipi incompatible.");return;}
-        HarmonyInstance.Patch(pack,prefix:new HarmonyMethod(typeof(Main),nameof(BeforePackTipi)),
-            postfix:new HarmonyMethod(typeof(Main),nameof(AfterPackTipi)));
+        HarmonyInstance.Patch(pack,prefix:new HarmonyMethod(typeof(Main),nameof(BeforePackTipi)));
         MelonLogger.Msg("Recogida del tipi bloqueada mientras ardan la fogata o la forja.");
     }
 
-    private static bool BeforePackTipi(out List<Fire> __state)
+    private static bool BeforePackTipi()
     {
-        __state=new List<Fire>();
         try
         {
             var tipi=deployedTipiField?.GetValue(null) as GameObject;
@@ -40,13 +38,7 @@ public sealed partial class Main
             var central=centralFireField?.GetValue(null) as Component;
             var fire=central==null?null:central.GetComponent<Fire>();
             if(FireActive(fire))return RefusePacking();
-            if(OccupiedFire(fire))return RefuseOccupied();
             if(liveForge && FireActive(cookingFire))return RefusePacking();
-            if(liveForge && cookingFire!=null)
-            {
-                if(OccupiedFire(cookingFire))return RefuseOccupied();
-                __state.Add(cookingFire);
-            }
 
             // Also catch saved native fires before this addon's scan has rebound
             // cookingFire, or when the tipi's centralFire reference is missing.
@@ -57,12 +49,9 @@ public sealed partial class Main
             foreach(var candidate in Object.FindObjectsOfType<Fire>())
             {
                 if(candidate==null || candidate.GetComponent<Campfire>()==null)continue;
-                bool atForge=NearFireAnchor(candidate.transform.position,forge);
-                bool atCentre=NearFireAnchor(candidate.transform.position,tipi.transform.position);
-                if(!atForge && !atCentre)continue;
-                if(FireActive(candidate))return RefusePacking();
-                if(OccupiedFire(candidate))return RefuseOccupied();
-                if(atForge && !__state.Any(f=>f.Pointer==candidate.Pointer))__state.Add(candidate);
+                if((NearFireAnchor(candidate.transform.position,tipi.transform.position)
+                    || NearFireAnchor(candidate.transform.position,forge)) && FireActive(candidate))
+                    return RefusePacking();
             }
             return true; // Let the original packing and save logic run untouched.
         }
@@ -72,40 +61,6 @@ public sealed partial class Main
             HUDMessage.AddMessage("No se pudo comprobar el fuego. El tipi no se ha recogido.");
             return false;
         }
-    }
-    private static void AfterPackTipi(bool __runOriginal, List<Fire> __state)
-    {
-        // A blocked/failed pack must never delete the cooking station.
-        if(!__runOriginal || __state==null || deployedTipiField?.GetValue(null) is GameObject tipi && tipi!=null)return;
-        foreach(var fire in __state)
-        {
-            if(fire==null)continue;
-            // No item transfers can occur inside the synchronous PackTipi call,
-            // but recheck before permanently removing this specific native fire.
-            if(FireActive(fire) || OccupiedFire(fire))continue;
-            try
-            {
-                FireManager.RemoveFire(fire,true); // Register native permanent removal for saving.
-                if(fire!=null)Object.Destroy(fire.gameObject);
-                if(cookingFire==fire)cookingFire=null;
-            }
-            catch(Exception e){MelonLogger.Error("No se pudo retirar la cocina del tipi: " + e);}
-        }
-    }
-    private static bool OccupiedFire(Fire fire)
-    {
-        if(fire==null)return false;
-        // Include disabled legacy slots as well as the current central slot.
-        foreach(var point in fire.GetComponentsInChildren<GearPlacePoint>(true))
-            if(point!=null && point.GetPlacedGear()!=null)return true;
-        foreach(var gear in fire.GetComponentsInChildren<GearItem>(true))
-            if(gear!=null && !gear.m_InPlayerInventory)return true;
-        return false;
-    }
-    private static bool RefuseOccupied()
-    {
-        const string text="Recoge la olla, sarten y comida antes de recoger el tipi.";
-        Tell(text);HUDMessage.AddMessage(text);return false;
     }
     private static bool NearFireAnchor(Vector3 position,Vector3 anchor)
     {

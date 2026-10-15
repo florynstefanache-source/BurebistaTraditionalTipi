@@ -1,0 +1,5 @@
+BurebistaTraditionalTipi: 16 text occurrences; 16 bilingual phrases; original behavior, assets and managed JIT checked.
+BurebistaTipiCuringRack: 5 text occurrences; 5 bilingual phrases; original behavior, assets and managed JIT checked.
+BurebistaTipiWorkbench: 18 text occurrences; 17 bilingual phrases; original behavior, assets and managed JIT checked.
+BurebistaTipiHideBed: 3 text occurrences; 7 bilingual phrases; original behavior, assets and managed JIT checked.
+663 checks passed. Game not executed.

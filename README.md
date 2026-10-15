@@ -1,103 +1,65 @@
-# Burebista Traditional Tipi · The Long Dark
+# Burebista Tipi + 3 addons · Español / English
 
-Un tipi portátil con piel cosida, palos con materiales del juego y una fogata interior. Este repositorio reúne el mod principal y tres addons opcionales: un bastidor de curado, un banco de trabajo exterior con brasero y cocina y una cama de piel con mejoras automáticas.
+[Descargar paquete completo / Download full package](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/releases/latest)
 
-| Componente | Versión | Descarga | Guía |
-| --- | --- | --- | --- |
-| Tipi tradicional | **1.2.3** | [ZIP del tipi](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTraditionalTipi-v1.2.3.zip) | Instrucciones abajo |
-| Bastidor de curado | **0.1.1** | [ZIP del bastidor](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiCuringRack-v0.1.1.zip) | [Uso del bastidor](addons/TipiCuringRack/README.md) |
-| Banco y cocina | **0.3.4** | [ZIP del banco](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/TipiWorkbench-v0.3.4.zip) | [Uso del banco](addons/TipiWorkbench/README.md) |
-| Cama de piel | **0.1.1** | [ZIP de la cama](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipiHideBed-v0.1.1.zip) | [Uso de la cama](addons/TipiHideBed/README.md) |
+## Español
 
-**[Descargar el tipi con los dos addons](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipi-Pack-1.2.3-Rack-0.1.1-Workbench-0.3.4.zip)**
+Actualización de idioma para el tipi instalado y sus tres addons: bastidor de curado, banco de trabajo con forja/cocina y cama de pieles.
 
-Para tener los tres addons, instala el paquete anterior y añade el **[ZIP de la cama v0.1.1](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipiHideBed-v0.1.1.zip)**. El paquete conjunto anterior conserva sus dos addons originales.
+Con el juego en inglés, las ayudas y avisos traducidos aparecen en inglés. Con el juego en español, aparecen en español. No hay un selector de idioma adicional. Los nombres de pieles de la cama se actualizan al mostrarse, incluso después de cambiar de idioma.
 
-Los ZIP contienen una carpeta `Mods` lista para copiar. Los addons aparecen al desplegar el tipi cuando sus DLL están instaladas; no tienen una receta de construcción independiente en estas versiones.
+### Instalación
 
-## Requisitos e instalación
+1. Cierra The Long Dark. Conserva una copia de los cuatro DLL y el modcomponent anteriores fuera de Mods.
+2. Copia el contenido completo de la carpeta `Mods` de este ZIP a `TheLongDark/Mods`, aceptando reemplazarlos.
+3. Conserva la carpeta `BurebistaTraditionalTipi`, sus texturas y todos los datos de partidas/ModData. No borres carpetas ni dejes DLL duplicados con otros nombres dentro de Mods.
+4. Inicia el juego con el idioma deseado y comprueba las ayudas del tipi, bastidor, banco/cocina y cama.
 
-- The Long Dark para Windows con MelonLoader y sus ensamblados IL2CPP generados.
-- ModComponent y sus dependencias correspondientes a tu instalación, para el objeto empaquetado y su receta.
-- ModData, para el guardado del tipi.
-- Los addons requieren el mod principal. No funcionan de forma independiente.
+El paquete conjunto incluye los archivos del tipi y sus tres addons, con las texturas del tipi. Mantiene las dependencias que ya utilizabas, como MelonLoader, ModComponent y ModData. No necesita un traductor global ni una nueva dependencia.
 
-1. Cierra el juego.
-2. Descarga el paquete conjunto, o el tipi y los addons que quieras instalar.
-3. Copia el **contenido** de `Mods` en `TheLongDark/Mods`, conservando las subcarpetas y sustituyendo las versiones anteriores.
-4. Deja una sola copia de cada DLL. Conserva las dependencias ya instaladas.
-5. Si usabas el complemento antiguo de prueba `BurebistaCampPersistence.dll`, retíralo: el guardado ya está integrado en el tipi.
+### Incluye
 
-El paquete completo instala:
+- `BurebistaTraditionalTipi.dll` · base instalada 1.2.3: puerta, desplegar, girar, empaquetar y avisos.
+- `BurebistaTipiCuringRack.dll` · base instalada 0.1.1: ayuda del bastidor y avisos de materiales.
+- `BurebistaTipiWorkbench.dll` · base instalada 0.3.3: banco de trabajo, brasero, forja, cocina, combustible y aviso para apagar los fuegos antes de recoger el tipi.
+- `BurebistaTipiHideBed.dll` · base instalada 0.1.1: dormir, mejora de cama y nombres de pieles de ciervo, lobo, alce y oso.
+- `BurebistaTraditionalTipi.modcomponent`: nombre y descripción del objeto en ambos idiomas; caracteres españoles corregidos. Recursos y receta conservados.
 
-```text
-TheLongDark/Mods/
-├── BurebistaTraditionalTipi.dll
-├── BurebistaTraditionalTipi.modcomponent
-├── BurebistaTraditionalTipi/
-│   ├── tipi_hide.png
-│   └── tipi_wolf.png
-├── BurebistaTipiCuringRack.dll       (opcional)
-├── BurebistaTipiWorkbench.dll        (opcional)
-└── BurebistaTipiHideBed.dll          (opcional, descarga separada)
-```
+Se conservan recetas, cantidades, tiempos, combustible, capacidad del bastidor, mejoras de cama, guardado, texturas, colocación y teclas. La receta del tipi sigue usando 20 palos, 6 pieles curadas de lobo, 4 tripas curadas, 10 piedras y un cuchillo; dura 720 minutos. El banco sigue pidiendo 1 carbón o 3 carboncillos por sesión.
 
-Las dependencias y las DLL del juego no se redistribuyen. Para actualizar solo un addon basta sustituir su DLL; no hace falta reconstruir el tipi.
+No modifica otros mods, el iglú ni Snow Blocks. Los números de versión base de los DLL se conservan: esta es una revisión de idioma de esas versiones instaladas.
 
-## Fabricar el tipi
+### Validación
 
-Busca **Tipi tradicional empaquetado** en un banco de trabajo. La receta incluida requiere luz y 720 minutos de fabricación:
+663 comprobaciones de selección de idioma, ejecución de los métodos de texto con una simulación del idioma, instrucciones originales y recursos internos. Se comprobó que la receta y los bundles del modcomponent se conservan byte por byte. Estas pruebas no ejecutan el juego ni sustituyen la comprobación dentro de tu partida.
 
-| Material | Cantidad |
-| --- | ---: |
-| Palos | 20 |
-| Pieles de lobo curadas | 6 |
-| Tripas curadas | 4 |
-| Piedras | 10 |
+## English
 
-Necesitas un cuchillo; la receta admite también sus variantes indicadas en [la receta](modcomponent/blueprints/burebistapackedtipi.json). Lleva el tipi empaquetado en el inventario para desplegarlo.
+Language update for the installed tipi and its three addons: curing rack, workbench with forge/cooking, and hide bed.
 
-## Teclas
+Translated hints and messages follow the game language: English or Spanish. No extra language selector is needed. Bed hide names are translated when displayed, including after changing language.
 
-| Tecla | Acción |
-| --- | --- |
-| **F3** | Desplegar el tipi empaquetado |
-| **F4** | Girar el tipi desplegado |
-| **E** | Abrir o cerrar la puerta cerca del tipi; al apuntar a la cama, abrir descanso |
-| **F2** | Recoger el tipi |
-| **F9** | Ocultar o mostrar las instrucciones del tipi |
-| **G** | Colocar materiales frescos cercanos en el bastidor, con el addon instalado |
-| **B** | Abrir fabricación junto al banco exterior |
-| **N** | Encender o apagar las brasas de fabricación del banco |
-| **C** | Acceder al fuego o al punto de cocina del brasero |
+### Installation
 
-`Ctrl+F6` entrega un tipi empaquetado para pruebas. No es necesario para el uso normal.
+1. Close The Long Dark. Back up your previous four DLLs and modcomponent outside Mods.
+2. Copy the complete contents of this ZIP's `Mods` folder into `TheLongDark/Mods`, replacing existing files.
+3. Keep the `BurebistaTraditionalTipi` folder, textures and all save/ModData files. Do not delete folders or keep renamed duplicate DLLs in Mods.
+4. Start the game in your chosen language and check the tipi, rack, workbench/cooking and bed hints.
 
-## Cama de piel
+The full package includes the tipi, all three addons and the tipi textures. Keeps existing dependencies such as MelonLoader, ModComponent and ModData. No global translator or additional dependency is required.
 
-Con el addon de cama instalado, una piel curada se convierte automáticamente en cama al acercarte al tipi. Mejora de **ciervo (+5 °C) → lobo (+7 °C) → alce (+10 °C) → oso (+12 °C)** y devuelve la piel sustituida. **E** al mirar la cama abre el descanso del juego. [Instrucciones completas](addons/TipiHideBed/README.md).
+### Included
 
-## Recogida, cocina y guardado
+- `BurebistaTraditionalTipi.dll` · installed base 1.2.3: door, deployment, rotation, packing and messages.
+- `BurebistaTipiCuringRack.dll` · installed base 0.1.1: rack hints and material messages.
+- `BurebistaTipiWorkbench.dll` · installed base 0.3.3: workbench, brazier, forge, cooking, fuel and the warning to extinguish fires before packing the tipi.
+- `BurebistaTipiHideBed.dll` · installed base 0.1.1: sleeping, bed upgrades and deer/wolf/moose/bear hide names.
+- `BurebistaTraditionalTipi.modcomponent`: bilingual item name and description, with repaired Spanish characters. Assets and recipe preserved.
 
-Con Workbench **0.3.4**, la recogida se bloquea mientras ardan la fogata interior, la cocina del brasero o las brasas de fabricación. Retira las ollas, sartenes y comida antes de recoger. **N solo controla las brasas de fabricación**, no apaga el fuego nativo de cocina.
+Preserves recipes, amounts, durations, fuel, rack capacity, bed upgrades, saves, textures, placement and keys. The tipi recipe still uses 20 sticks, 6 cured wolf pelts, 4 cured guts, 10 stones and a knife; it takes 720 minutes. The workbench still requires 1 coal or 3 charcoal per session.
 
-Al recoger correctamente el tipi, el addon retira también el punto de cocina invisible del brasero y registra su eliminación mediante el sistema nativo del juego para el siguiente guardado normal. No limpia automáticamente puntos abandonados por versiones anteriores.
+Does not modify other mods, the igloo or Snow Blocks. Base DLL version numbers are retained: this is a language revision of those installed versions.
 
-El tipi guarda posición, orientación y puerta por zona y partida mediante ModData. El combustible de las fogatas usa el guardado del juego. El bastidor mantiene los materiales como objetos del mundo: al cargar puede ser necesario volver a colocarlos con G. No se garantiza su curado mientras la zona está descargada.
+### Verification
 
-## Estado y problemas
-
-La colocación central de la olla de Workbench 0.3.2 fue confirmada en partida por el usuario. Las compilaciones de los cambios posteriores se comprobaron; la protección y limpieza de 0.3.4 todavía requieren una prueba en partida de recoger, guardar y volver a cargar. El bastidor conserva su estado de beta.
-
-Si aparece un fallo, indica las versiones, los pasos para reproducirlo y adjunta `MelonLoader/Latest.log` en [Issues](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/issues).
-
-## Código y versiones
-
-- [Código del tipi](src) y proyecto en la raíz.
-- [Código del bastidor](addons/TipiCuringRack/Source).
-- [Código del banco](addons/TipiWorkbench/Source).
-- [Código de la cama](addons/TipiHideBed/Source) y [pruebas](addons/TipiHideBed/Tests).
-- [Compilar desde código](docs/BUILD.md).
-- [Historial de cambios](CHANGELOG.md) · [Descargas y comprobaciones SHA-256](downloads/README.md).
-
-Los materiales nativos se obtienen del juego durante la ejecución. La piel cosida original se conserva. Proyecto no oficial, sin afiliación con Hinterland. Se mantiene la [licencia del repositorio](LICENSE).
+663 checks cover language selection, actual text-method execution with a simulated language provider, original instructions and embedded assets. The modcomponent recipe and bundles remain byte-for-byte identical. Tests do not run the game or replace an in-game check.

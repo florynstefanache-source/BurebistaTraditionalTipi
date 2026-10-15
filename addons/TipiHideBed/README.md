@@ -1,3 +1,5 @@
+**Español / English:** ayudas y avisos según el idioma del juego. / Hints and messages follow the game language.
+
 # Cama de piel del tipi · v0.1.1
 
 **[Descargar addon](https://github.com/florynstefanache-source/BurebistaTraditionalTipi/raw/refs/heads/main/downloads/BurebistaTipiHideBed-v0.1.1.zip)**
@@ -37,3 +39,10 @@ El usuario confirmó en partida que la versión **0.1.1 funciona** tras corregir
 - [Pruebas](Tests)
 
 Compila `Source/TipiHideBed.csproj` con .NET SDK y `GameDir` apuntando a tu instalación. No se redistribuyen bibliotecas ni materiales del juego.
+
+
+## English
+
+Hide bed addon for Burebista Traditional Tipi. Hints and messages follow the game language (English or Spanish). Close the game and replace `Mods/BurebistaTipiHideBed.dll`. Keep the main tipi, its textures and dependencies. Recipes, fuel, controls, save data and existing behavior are preserved.
+
+[Full bilingual package](../../README.md)
